@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Local env files
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sw?
+
+# Testing
+coverage/
+*.lcov
+
+# Misc
+*.tgz
+.cache/
+.eslintcache
+.parcel-cache/
+.sass-cache/
+*.log
+
+# Optional: TypeScript
+*.tsbuildinfo
+
+# Optional: Next.js
+.next/
