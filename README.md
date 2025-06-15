@@ -102,8 +102,6 @@ Configure your environment variables:
 
 ```env
 VITE_API_BASE_URL=http://localhost:8000/api
-VITE_APP_NAME=Personal Budget Tracker
-VITE_DEFAULT_CURRENCY=USD
 ```
 
 ### 3. Start Development Server
@@ -119,41 +117,6 @@ The application will be available at `http://localhost:5173`
 ### Required Variables
 ```env
 VITE_API_BASE_URL=http://localhost:8000/api
-
-
-### Optional Configuration
-```env
-VITE_APP_NAME=Personal Budget Tracker
-VITE_DEFAULT_CURRENCY=USD
-VITE_DEFAULT_LOCALE=en-US
-VITE_ITEMS_PER_PAGE=20
-VITE_CHART_ANIMATION_DURATION=800
-VITE_TOAST_DURATION=3000
-```
-
-### Feature Flags
-```env
-VITE_ENABLE_ANALYTICS=false
-VITE_ENABLE_DEBUG_MODE=true
-VITE_SHOW_DEV_TOOLS=true
-```
-
-### Custom CSS Classes
-```css
-/* Reusable component classes */
-.btn-primary { /* Primary button styles */ }
-.btn-secondary { /* Secondary button styles */ }
-.card { /* Card container styles */ }
-.input-field { /* Form input styles */ }
-.stat-card { /* Statistics card styles */ }
-```
-
-### Design System
-- **Color Palette**: Consistent color scheme across components
-- **Typography**: Inter font family with proper hierarchy
-- **Spacing**: 8px grid system for consistent spacing
-- **Shadows**: Subtle shadows for depth and elevation
-- **Borders**: Rounded corners and subtle borders
 
 ## 🔐 Authentication Flow
 
@@ -194,13 +157,6 @@ npm run test:coverage
 - **Vite HMR**: Hot module replacement
 - **ESLint**: Code quality checking
 
-### Debug Configuration
-```env
-VITE_ENABLE_DEBUG_MODE=true
-VITE_SHOW_DEV_TOOLS=true
-VITE_ENABLE_REDUX_DEVTOOLS=true
-```
-
 ### Error Handling
 - **Error Boundaries**: Catch and display React errors
 - **API Error Handling**: Graceful API error management
@@ -214,85 +170,15 @@ VITE_ENABLE_REDUX_DEVTOOLS=true
 npm run build
 ```
 
-### Build Optimization
-- **Minification**: CSS and JavaScript compression
-- **Asset Hashing**: Cache busting for static assets
-- **Bundle Analysis**: Analyze bundle size and dependencies
-- **Environment Variables**: Production configuration
-
-### Deployment Platforms
-- **Vercel**: Zero-configuration deployment
-- **Netlify**: Continuous deployment from Git
-- **GitHub Pages**: Static site hosting
-- **AWS S3**: Scalable static hosting
 
 ### Production Configuration
 ```env
 VITE_API_BASE_URL=https://api.yourdomain.com/api
-VITE_NODE_ENV=production
-VITE_ENABLE_ANALYTICS=true
-VITE_ENABLE_DEBUG_MODE=false
 ```
 
-## 🔧 Customization
-
-### Theme Customization
-```javascript
-// Extend Tailwind theme
-theme: {
-  extend: {
-    colors: {
-      brand: {
-        50: '#f0f9ff',
-        500: '#3b82f6',
-        900: '#1e3a8a'
-      }
-    }
-  }
-}
-```
 
 ### Component Customization
 - **Styling**: Override default styles with custom CSS
 - **Behavior**: Extend component functionality
 - **Configuration**: Environment-based feature toggles
 - **Localization**: Multi-language support ready
-
-## 📚 Dependencies
-
-### Core Dependencies
-- **React 18.3.1**: UI library
-- **React Router DOM 6.20.1**: Client-side routing
-- **Axios 1.6.2**: HTTP client
-- **D3.js 7.8.5**: Data visualization
-
-### UI Dependencies
-- **Tailwind CSS 3.3.6**: Utility-first CSS framework
-- **React Hook Form 7.48.2**: Form management
-- **React Hot Toast 2.4.1**: Toast notifications
-- **Date-fns 2.30.0**: Date manipulation
-
-### Development Dependencies
-- **Vite 5.4.2**: Build tool and dev server
-- **ESLint**: Code linting
-- **PostCSS**: CSS processing
-- **Autoprefixer**: CSS vendor prefixes
-
-## 🤝 Contributing
-
-### Development Guidelines
-1. Follow React best practices
-2. Use TypeScript for type safety (if migrating)
-3. Write comprehensive tests
-4. Follow component naming conventions
-5. Update documentation
-
-### Code Style
-- **ESLint Configuration**: Enforced code style
-- **Prettier**: Code formatting
-- **Component Structure**: Consistent file organization
-- **Naming Conventions**: Clear and descriptive names
-
-## 📄 License
-
-This project is licensed under the MIT License.
